@@ -1,0 +1,12 @@
+# Config
+.env*.local
+
+# Yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+# TypeScript Compiled
+dist-rollup
+dist-tsc

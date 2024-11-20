@@ -1,0 +1,30 @@
+{
+  "name": "rollup-for-typescript",
+  "version": "1.0.0",
+  "description": "Test TypeScript with rollup and tsc.",
+  "main": "dist/index.js",
+  "license": "UNLICENCED",
+  "private": true,
+  "devDependencies": {
+    "@rollup/plugin-run": "^3.1.0",
+    "@types/node": "^22.9.1",
+    "prettier": "^3.3.3",
+    "prettylint": "^2.0.0",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.27.3",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "tsc-watch": "^6.2.1",
+    "tslib": "^2.8.1",
+    "typescript": "^5.6.3"
+  },
+  "packageManager": "yarn@4.5.1",
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rimraf dist-rollup/* || rimraf dist-tsc/*",
+    "dev": "rollup -c -w",
+    "lint": "yarn prettylint .",
+    "typecheck": "tsc --noEmit",
+    "watch": "tsc-watch --onSuccess \"node ./dist-tsc/index.js\""
+  },
+  "type": "module"
+}
