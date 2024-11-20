@@ -24,7 +24,7 @@
     "dev": "rollup -c -w",
     "lint": "yarn prettylint .",
     "typecheck": "tsc --noEmit",
-    "watch": "tsc-watch --onSuccess \"node ./dist-tsc/index.js\""
+    "watch": "tsc-watch -p ./tsconfig.tsc-watch.json --onSuccess \"node ./dist-tsc/index.js\""
   },
   "type": "module"
 }
