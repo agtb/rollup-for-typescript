@@ -14,6 +14,6 @@ export default {
     run(),
   ],
   watch: {
-    exclude: ["node_modules/**"],
+    exclude: [".pnp.*", "yarn/**"],
   },
 }
