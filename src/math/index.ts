@@ -1,1 +1,1 @@
-export { add, substract } from "./math.js"
+export { add, subtract } from "./math.js"
