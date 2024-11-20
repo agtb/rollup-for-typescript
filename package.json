@@ -20,7 +20,7 @@
   "packageManager": "yarn@4.5.1",
   "scripts": {
     "build": "rollup -c",
-    "clean": "rimraf dist-rollup/* || rimraf dist-tsc/*",
+    "clean": "rimraf dist-rollup/* dist-tsc/*",
     "dev": "rollup -c -w",
     "lint": "yarn prettylint .",
     "typecheck": "tsc --noEmit",
