@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Test TypeScript with rollup and tsc.",
   "main": "dist/index.js",
-  "license": "UNLICENCED",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "@rollup/plugin-run": "^3.1.0",
