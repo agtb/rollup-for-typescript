@@ -24,7 +24,7 @@
   "packageManager": "yarn@4.5.1",
   "scripts": {
     "build": "rollup -c",
-    "clean": "rimraf dist-rollup/* & rimraf dist-tsc/*",
+    "clean": "rimraf dist-rollup/* & rimraf dist-tsc/* & rimraf coverage/*",
     "dev": "rollup -c -w",
     "lint": "yarn prettylint .",
     "test": "yarn jest",
