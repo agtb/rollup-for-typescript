@@ -1,10 +1,18 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "esModuleInterop": true,
     "sourceMap": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmitOnError": true,
-    "target": "es6"
+    "target": "ESNext"
+  },
+  // Makes ts-jest work:
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ESNext",
+      "moduleResolution": "Node"
+    }
   }
 }
