@@ -6,5 +6,5 @@
     "moduleResolution": "Bundler",
     "noEmitOnError": true,
     "target": "es6"
-  },
+  }
 }
