@@ -6,7 +6,8 @@
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmitOnError": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "types": ["jest", "node"]
   },
   // Makes ts-jest work:
   "ts-node": {
