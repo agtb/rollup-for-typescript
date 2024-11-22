@@ -1,29 +1,35 @@
 import { toLowerCase, toUpperCase } from "./string"
 
 describe("String.toLowerCase", () => {
-  it('Transform "hello world" returns "hello world"', () => {
-    expect(toLowerCase("hello world")).toBe("hello world")
-  })
+  const expected = [
+    { a: "hello world", answer: "hello world" },
+    { a: "HELLO WORLD", answer: "hello world" },
+    { a: "Hello World", answer: "hello world" },
+  ]
 
-  it('Transform "HELLO WORLD" returns "hello world"', () => {
-    expect(toLowerCase("HELLO WORLD")).toBe("hello world")
-  })
-
-  it('Transform "Hello World" returns "hello world"', () => {
-    expect(toLowerCase("Hello World")).toBe("hello world")
-  })
+  test.each(expected)(
+    `Transform "$a" toLowerCase returns "$answer"`,
+    ({ a, answer }) => {
+      const actual = toLowerCase(a)
+      expect(actual).toEqual(expect.any(String))
+      expect(actual).toBe(answer)
+    },
+  )
 })
 
 describe("String.toUpperCase", () => {
-  it('Transform "HELLO WORLD" returns "hello world"', () => {
-    expect(toUpperCase("HELLO WORLD")).toBe("HELLO WORLD")
-  })
+  const expected = [
+    { a: "hello world", answer: "HELLO WORLD" },
+    { a: "HELLO WORLD", answer: "HELLO WORLD" },
+    { a: "Hello World", answer: "HELLO WORLD" },
+  ]
 
-  it('Transform "hello world" returns "hello world"', () => {
-    expect(toUpperCase("hello world")).toBe("HELLO WORLD")
-  })
-
-  it('Transform "Hello World" returns "hello world"', () => {
-    expect(toUpperCase("Hello World")).toBe("HELLO WORLD")
-  })
+  test.each(expected)(
+    `Transform "$a" toLowerCase returns "$answer"`,
+    ({ a, answer }) => {
+      const actual = toUpperCase(a)
+      expect(actual).toEqual(expect.any(String))
+      expect(actual).toBe(answer)
+    },
+  )
 })

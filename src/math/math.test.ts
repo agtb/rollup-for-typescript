@@ -1,21 +1,32 @@
 import { add, subtract } from "./math"
 
 describe("Math.add", () => {
-  it("Add 0 and 0 returns 0", () => {
-    expect(add(0, 0)).toBe(0)
-  })
+  const expected = [
+    { a: 0, b: 0, result: 0 },
+    { a: 1, b: 1, result: 2 },
+    { a: -1, b: -1, result: -2 },
+  ]
 
-  it("Add 1 and 1 returns 2", () => {
-    expect(add(1, 1)).toBe(2)
+  test.each(expected)(`Add $a + $b returns $result`, ({ a, b, result }) => {
+    const actual = add(a, b)
+    expect(actual).toEqual(expect.any(Number))
+    expect(actual).toBe(result)
   })
 })
 
 describe("Math.subtract", () => {
-  it("Subtract 0 and 0 returns 0", () => {
-    expect(subtract(0, 0)).toBe(0)
-  })
+  const expected = [
+    { a: 0, b: 0, result: 0 },
+    { a: 1, b: 1, result: 0 },
+    { a: -1, b: -1, result: 0 },
+  ]
 
-  it("Subtract 1 and 1 returns 2", () => {
-    expect(subtract(1, 1)).toBe(0)
-  })
+  test.each(expected)(
+    `Subtract $a - $b returns $result`,
+    ({ a, b, result }) => {
+      const actual = subtract(a, b)
+      expect(actual).toEqual(expect.any(Number))
+      expect(actual).toBe(result)
+    },
+  )
 })
