@@ -27,7 +27,7 @@
     "clean": "rimraf dist-rollup/* & rimraf dist-tsc/* & rimraf coverage/*",
     "dev": "rollup -c -w",
     "lint": "yarn prettylint .",
-    "test": "yarn jest",
+    "test": "yarn jest --verbose",
     "typecheck": "tsc --noEmit",
     "watch": "tsc-watch -p ./tsconfig.tsc-watch.json --onSuccess \"node ./dist-tsc/index.js\""
   },
