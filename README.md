@@ -1,4 +1,4 @@
-# Rollup
+# Rollup for TypeScript
 
 ![CI](https://github.com/agtb/rollup-for-typescript/actions/workflows/node.js.yml/badge.svg)
 
