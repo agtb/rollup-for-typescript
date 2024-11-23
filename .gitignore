@@ -10,3 +10,6 @@
 # TypeScript Compiled
 dist-rollup
 dist-tsc
+
+# Tests
+coverage/*
