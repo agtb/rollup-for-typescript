@@ -1,6 +1,6 @@
 # Rollup
 
-![CI](https://github.com/github/docs/actions/workflows/node.js.yml/badge.svg)
+![CI](https://github.com/agtb/rollup-for-typescript/actions/workflows/node.js.yml/badge.svg)
 
 Demo TypeScript compiled via watch scripts using [rollup](https://rollupjs.org/configuration-options/#watch) or [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html)...
 with type checking running when compiling!
