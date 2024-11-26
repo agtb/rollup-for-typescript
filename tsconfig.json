@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "allowJs": true,
+    "allowJs": false,
     "esModuleInterop": true,
+    "jsx": "react-jsx",
     "sourceMap": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "noEmitOnError": true,
     "target": "ESNext",
-    "types": ["jest", "node"]
+    "types": ["jest", "node", "@testing-library/jest-dom"]
   },
   // Makes ts-jest work:
   "ts-node": {
