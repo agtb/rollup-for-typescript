@@ -38,6 +38,7 @@
     "dev": "rollup -c -w",
     "lint": "yarn prettylint .",
     "test": "yarn jest --verbose",
+    "test:watch": "jest --watch",
     "typecheck": "tsc --noEmit",
     "watch": "tsc-watch -p ./tsconfig.tsc-watch.json --onSuccess \"node ./dist-tsc/index.js\""
   },
