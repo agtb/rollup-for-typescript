@@ -4,7 +4,7 @@ const jestConfig: JestConfigWithTsJest = {
   coverageReporters: ["html", "text", "text-summary", "cobertura"],
   moduleNameMapper: {
     "^@App/(.*)$": "<rootDir>/src/$1",
-    "^lib/(.*)$": "<rootDir>/common/$1",
+    "\\.(css|sass|scss)$": "identity-obj-proxy",
   },
   transform: {
     "^.+\\.tsx?$": "ts-jest",
